@@ -31,13 +31,14 @@
 #edit {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
-	border: 1px solid black;
-	width: 100%;
+	width: 50%;
 }
 
-#edit td {
+#edit td, #edit th {
+	border: 1px solid #ddd;
 	padding: 8px;
 }
+
 
 #edit th{
 	background-color: #006bb3;

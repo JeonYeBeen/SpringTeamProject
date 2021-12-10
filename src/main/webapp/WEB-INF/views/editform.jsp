@@ -9,10 +9,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Edit Form</title>
-<link rel="stylesheet" href="${path}/resources/css/style.css">
+<link rel="stylesheet" href="${path}/resources/css/style.css?after">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
-	<h1>Edit Form</h1>
+	<h1>Edit Book</h1>
 	<form:form commandName="bookVO" method="POST" action="../editok">
 		<form:hidden path="seq" />
 
@@ -34,8 +35,8 @@
 				<td><form:textarea cols="50" rows="5" path="content" /></td>
 			</tr>
 		</table>
-		<input type="submit" value="Edit Post" />
-		<input type="button" value="Cancel" onclick="history.back()" />
+		<input type="submit" class="btn btn-primary" value="Edit Post" />
+		<input type="button" class="btn btn-primary" value="Cancel" onclick="history.back()" />
 	</form:form>
 
 
