@@ -20,15 +20,16 @@
 </script>
 </head>
 <body>
-<h1>자유게시판</h1>
+<h1>독서기록장</h1>
 <table id="list" width="90%">
 <tr>
 	<th>Id</th> 	
 	<th>장르</th>
 	<th>제목</th>
 	<th>제목</th>
-	<th>내용</th>
+	<th>한줄평</th>
 	<th>등록일자</th>
+	<th>보기</th>
 	<th>수정</th>
 	<th>삭제</th>
 </tr>
@@ -43,8 +44,8 @@
 		<td>${u.writer}</td>
 		<td>${u.content}</td>
 		<td>${u.regdate}</td>
+		<td><a href="view/${u.seq}" class="btn btn-info" role="button" >View</a></td>
 		<td><a href="editform/${u.seq}" class="btn btn-info" role="button" >Edit</a></td>
-		<!-- delelte_ok() 실행, u.getSeq를 넘겨줌. -->
 		<td><a href="javascript:delete_ok('${u.seq}')" class="btn btn-danger" role="button">Delete</a></td>
 	</tr>
 </c:forEach>

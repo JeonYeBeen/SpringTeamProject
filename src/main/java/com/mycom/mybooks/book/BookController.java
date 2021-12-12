@@ -49,6 +49,13 @@ public class BookController {
 			System.out.println("데이터 수정 성공!!!");
 		return "redirect:list";
 	}
+	
+	@RequestMapping(value = "/book/view/{id}", method = RequestMethod.GET)
+	public String viewPost(@PathVariable("id") int id, Model model) {
+		BookVO BookVO = bookService.getBook(id);
+		model.addAttribute("bookVO", BookVO);
+		return "view";
+	}
 
 	@RequestMapping(value = "/book/deleteok/{id}", method = RequestMethod.GET)
 	public String deletePostOk(@PathVariable("id") int id) {

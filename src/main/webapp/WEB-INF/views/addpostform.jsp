@@ -9,7 +9,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="${path}/resources/css/style.css?after">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -30,12 +31,16 @@
 				<td><input type="text" name="category" /></td>
 			</tr>
 			<tr>
-				<th>내용</th>
+				<th>한줄평</th>
 				<td><textarea cols="50" rows="5" name="content"></textarea></td>
 			</tr>
+			<tr>
+				<th>내용</th>
+				<td><textarea cols="50" rows="10" name="record"></textarea></td>
+			</tr>
 		</table>
-		<a href="list" class="btn btn-primary" role="button">View All Records</a>
-		<input type="submit" class="btn btn-primary" value="Add Post" />
+		<a href="list" class="btn btn-primary" role="button">View All
+			Records</a> <input type="submit" class="btn btn-primary" value="Add Post" />
 	</form>
 
 </body>

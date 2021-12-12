@@ -3,14 +3,15 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<c:set var="path" value="${pageContext.request.contextPath}"/>
+<c:set var="path" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Edit Form</title>
 <link rel="stylesheet" href="${path}/resources/css/style.css?after">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
 	<h1>Edit Book</h1>
@@ -31,12 +32,17 @@
 				<td><form:input path="category" /></td>
 			</tr>
 			<tr>
-				<th>내용</th>
+				<th>한줄평</th>
 				<td><form:textarea cols="50" rows="5" path="content" /></td>
+			</tr>
+			<tr>
+				<th>내용</th>
+				<td><textarea cols="50" rows="10" name="record"></textarea></td>
 			</tr>
 		</table>
 		<input type="submit" class="btn btn-primary" value="Edit Post" />
-		<input type="button" class="btn btn-primary" value="Cancel" onclick="history.back()" />
+		<input type="button" class="btn btn-primary" value="Cancel"
+			onclick="history.back()" />
 	</form:form>
 
 

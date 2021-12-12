@@ -10,6 +10,7 @@ public class BookVO {
 	private String content;
 	private Date regdate;
 	private String category;
+	private String record;
 	public int getSeq() {
 		return seq;
 	}
@@ -46,8 +47,11 @@ public class BookVO {
 	public void setCategory(String category) {
 		this.category = category;
 	}
-	
-	
-	
+	public String getRecord() {
+		return record;
+	}
+	public void setRecord(String record) {
+		this.record = record;
+	}
 
 }
