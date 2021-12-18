@@ -53,7 +53,7 @@ public class LoginController {
 			session.removeAttribute("login");
 		}
 		
-		if (psw_repeat == vo.getPassword()) {
+		if (psw_repeat.equals(vo.getPassword())) {
 			isRegistered = service.insertMember(vo);
 			regvo = service.getMember(vo);
 		}
