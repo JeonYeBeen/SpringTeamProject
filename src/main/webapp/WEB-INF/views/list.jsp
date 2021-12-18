@@ -21,6 +21,7 @@
 </head>
 <body>
 <h1>독서기록장</h1>
+<a href="/mybooks/login/logout">logout</a>
 <table id="list" width="90%">
 <tr>
 	<th>Id</th> 	
